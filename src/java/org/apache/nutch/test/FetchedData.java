@@ -15,6 +15,6 @@ public class FetchedData {
 	
 	@Override
 	public String toString() {
-		return "Key: " + key.toString() + "/ content: " + content.toString();
+		return "Key: " + key != null ? key.toString() : "null" + "/ content: " + content != null ? content.toString() : "null";
 	}
 }

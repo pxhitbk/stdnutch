@@ -16,6 +16,6 @@
 
 <property>
 	<name>plugin.folders</name>
-	<value>/root/workspace/nutch/build/plugins</value>
+	<value>/home/august/stdnutch/build/plugins</value>
 </property>
 </configuration>

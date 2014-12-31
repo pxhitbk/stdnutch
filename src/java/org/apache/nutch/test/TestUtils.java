@@ -11,15 +11,24 @@ import org.mortbay.jetty.handler.ResourceHandler;
 
 public class TestUtils {
 	
-	public static void printCrawlDb(List<String> crawlUrls) throws IOException {
-		for(String s: crawlUrls) {
+	public static void printListString(List<String> list) throws IOException {
+		System.err.println("----------------------");
+		for(String s: list) {
 			System.out.println(s);
 		}
 	}
 	
 	public static void printGeneratedSegment(List<URLCrawlDatum> contents) throws IOException {
+		System.err.println("Generated segment:");
 		for(URLCrawlDatum c: contents) {
 			System.out.println(c.toString());
+		}
+	}
+	
+	public static void printFetchedData(List<FetchedData> data) throws IOException {
+		System.err.println("Fetch data:");
+		for(FetchedData d: data) {
+			System.out.println(d.toString());
 		}
 	}
 	
